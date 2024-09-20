@@ -1,0 +1,92 @@
+.card {
+  width: 400px; /* Fixed width */
+  height: 200px; /* Fixed height */
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  position: relative;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1px; /* Closer spacing between fields */
+  font-size: small;
+  justify-content: flex-start;
+}
+
+.title-field {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 15px; /* Increase space between title and other fields */
+}
+
+.labelTitle {
+  font-size: 2.1em;
+  font-weight: bold;
+}
+
+.iconClass {
+  font-size: 3rem; /* Increase icon size */
+  margin-right: 20px; /* Adjust margin between icon and title */
+}
+
+.label {
+  font-weight: normal;
+  margin-right: 10px;
+  font-size: 1em;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.value {
+  font-size: 0.9em;
+  flex-grow: 3;
+  margin-left: 10px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.status-field {
+  position: absolute; /* Position relative to .card */
+  bottom: 50px; /* Stick to bottom within the card */
+  right: 50px; /* Stick to right within the card */
+  justify-content: flex-end;
+  text-align: center;
+  display: inline-flex;
+  color: white;
+  background-color: green; /* Example background for status */
+  border-radius: 5px;
+}
+
+.status-label {
+  display: flex; /* Make it a flex container */
+  justify-content: center; /* Center text horizontally */
+  align-items: center; /* Center text vertically */
+  font-weight: bold;
+  width: 100px; /* Fixed width for status */
+  height: 30px; /* Fixed height for status */
+  border-radius: 5px;
+  color: white; /* Ensure text is white */
+}
+
+.status-active {
+  background-color: green;
+  color: white; /* Ensure text stays white */
+}
+
+.status-pending {
+  background-color: rgb(214, 214, 73);
+  color: white; /* White text */
+}
+
+.status-inactive {
+  background-color: red;
+  color: white; /* White text */
+}
+
+.seperated {
+  margin-bottom: 15px;
+}
